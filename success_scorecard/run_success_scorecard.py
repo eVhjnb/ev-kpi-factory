@@ -16,12 +16,12 @@ from datetime import datetime
 # ------------------------------------------------------------
 # Cada KPI tiene su propio archivo y un método run_kpi_XX()
 
+from success_scorecard.5_4w_ave_offboarding_forms import run_kpi_5
 from success_scorecard.16_replacement_processes_existing_clients import run_kpi_16
 from success_scorecard.32_overall_churn_rate import run_kpi_32
 
 # aqui se agregan mas KPIS
-# from success_scorecard.00_name_of_kpi import run_kpi_00
-# ...
+
 
 
 def run_success_scorecard():
@@ -37,11 +37,11 @@ def run_success_scorecard():
     # ------------------------
     # Lista de KPIs a ejecutar
     # ------------------------
+
     kpis = [
+        ("KPI 05 – 4W Ave Offboarding Forms", run_kpi_5),
         ("KPI 16 – Replacement Processes", run_kpi_16),
         ("KPI 32 – Overall Churn 52 weeks", run_kpi_32),
-        # Agregar aquí mas:
-        #("KPI 00 – name of kpi", run_kpi_00)
     ]
 
     # ------------------------
