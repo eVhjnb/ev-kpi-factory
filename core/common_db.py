@@ -4,14 +4,6 @@ import os
 import psycopg2
 from contextlib import contextmanager
 
-# ⚠️ IMPORTANTE:
-# No pongas valores por defecto aquí. Usa solo variables de entorno.
-# Ejemplo de export en tu servidor:
-# export DB_HOST="xxx"
-# export DB_PORT="5432"
-# export DB_NAME="00_DWH_main"
-# export DB_USER="usuario"
-# export DB_PASS="password_seguro"
 
 DB_CONFIG = {
     "host": os.getenv("DB_HOST"),
