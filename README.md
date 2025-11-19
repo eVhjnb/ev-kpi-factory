@@ -145,3 +145,21 @@ To demonstrate a scalable production-ready approach to KPIs:
 This repository reflects real-world operational analytics and data process design.
 
 
+---
+
+## Integration with Other Repositories
+
+The data used by these KPIs comes from multiple sources and automations.
+
+One of the main pipelines is:
+**ev-airtable-webhooks**
+https://github.com/eVhjnb/ev-airtable-webhooks
+
+There you will find:
+-Airtable automations,
+-JS scripts for forms,
+-Python webhooks (Flask + Gunicorn + systemd),
+-direct ingestion into the DWH.
+
+This repository (ev-kpi-factory) uses that structured data to build weekly KPIs and publish them in scorecards.
+
