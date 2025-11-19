@@ -43,7 +43,9 @@ def run_success_scorecard():
         ("KPI 16 – Replacement Processes", run_kpi_16),
         ("KPI 32 – Overall Churn 52 weeks", run_kpi_32),
     ]
-
+    """
+    Aqui es donde se pueden agregar todos los KPIs a calcular
+    """
     # ------------------------
     # Ejecución secuencial
     # ------------------------
