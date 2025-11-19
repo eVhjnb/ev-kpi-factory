@@ -68,10 +68,10 @@ def load_weekly_report(sheet_name: str, worksheet_name: str) -> pd.DataFrame:
 # -------------------------------------------------------------------
 
 # CUSTOMIZAR ESTOS NOMBRES SEGÚN TU ENTORNO
-SHEET_NAME = "CS_WEEKLY_SHEET_NAME"              # TODO: nombre del Google Sheet
-WORKSHEET_NAME = "CS_WEEKLY_WORKSHEET"           # TODO: nombre de la pestaña
-COLUMN_WEEK = "WEEK_REPORTED_COL"                # TODO: columna semana (ej. 'week_reported')
-COLUMN_REPLACEMENTS = "REPLACEMENTS_COUNT_COL"   # TODO: columna con el número de replacements
+SHEET_NAME = "CS_WEEKLY_SHEET_NAME"              # nombre del Google Sheet
+WORKSHEET_NAME = "CS_WEEKLY_WORKSHEET"           # nombre de la pestaña
+COLUMN_WEEK = "WEEK_REPORTED_COL"                # columna semana (ej. 'week_reported')
+COLUMN_REPLACEMENTS = "REPLACEMENTS_COUNT_COL"   # columna con el número de replacements
 
 
 def calculate_kpi_value(last_sunday_str: str, year_week_str: str) -> int:
@@ -113,10 +113,8 @@ def calculate_kpi_value(last_sunday_str: str, year_week_str: str) -> int:
 # -------------------------------------------------------------------
 
 def run_kpi_16():
-    """
-    Ejecuta el KPI 16 y lo inserta en la tabla de scorecard.
-    """
-
+    ### Ejecuta el KPI 16 y lo inserta en la tabla del scorecard.
+    
     from datetime import datetime
 
     # Fechas base
