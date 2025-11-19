@@ -3,7 +3,7 @@
 """
 KPI 32 – Overall Churn Rate (52 weeks, weekly)
 
-Ejemplo de KPI basado en:
+Ejemplo de KPI:
 - Tabla de acuerdos / contratos en DWH
 - Cálculo de churn real en últimas 52 semanas
 - Inserción en tabla de scorecard vía core.common_db
